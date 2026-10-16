@@ -1,0 +1,10 @@
+﻿node_modules/
+client/node_modules/
+client/dist/
+client_backup/
+.history/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store

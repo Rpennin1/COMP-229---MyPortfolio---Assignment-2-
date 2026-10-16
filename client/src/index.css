@@ -1,0 +1,406 @@
+/*the beginning of my css*/
+
+/* coloring of page */
+:root {
+  --black: #1A1A1A;
+  --dark-gray:#2E2E2E;
+  --gray: #666666;
+  --medium: #A3A3A3;
+  --light: #E5E5E5;
+  --off-white: #F5F5F5;
+  --white: #ffffff;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, var(--off-white), var(--white));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*holds my information on my page*/
+.page-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  background-color:var(--light);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color:var(--dark-gray);
+}
+
+.logo {
+  color:var(--white);
+  font-size:24px;
+  font-weight:lighter;
+}
+
+.navigation-links {
+  display:flex;
+  gap: 25px;
+}
+
+.navigation-links a {
+  font-weight:bolder;
+  color:var(--white);
+  text-decoration:none;
+}
+
+.navigation-links a:hover {
+  text-decoration:underline;
+  color:var(--gray);
+}
+
+/*ABOUT ME CONTENT*/
+.about-content {
+  display:flex;
+  gap:40px;
+  align-items:flex-start
+}
+
+/*About me photo*/
+.profile-image {
+  width:500px;
+  height:300px;
+  overflow:hidden;
+  border-radius:20px;
+  border: 3px solid var(--black);
+  box-shadow: 0 0 25px var(--black);
+} 
+
+/*legal name monitor*/
+.legal-name-label {
+  display:inline-block;
+  background-color:var(--black);
+  color: var(--light);
+  padding:6px 12px;
+  border-radius:20px;
+  margin-right:10px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight:bold;
+  border: 3px solid var(--white);
+}
+
+/*headings and formatted text*/
+h1,
+h2,
+h3 {
+  margin-top:0
+}
+
+h1 {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size:25px;
+  text-align:center;
+}
+
+h2 {
+  font-family:'Courier New', Courier, monospace;
+  font-size:17px;
+  text-align:left;
+}
+
+p {
+  font-family:'Times New Roman', Times, serif;
+  font-size:12px;
+  line-height:1.7;
+  text-align:center;
+}
+
+/*extra button for my other links*/
+.button {
+  display: block;
+  width: fit-content;
+  background-color: var(--black);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: var(--off-white);
+  margin: 20px auto;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 13px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background:var(--medium);
+}
+
+/* projects set up */
+.project-card {
+  background-color: var(--black);
+  border: 1px solid var(--white);
+  border-radius: 15px;
+  padding: 25px;
+  width: 300px;
+  box-shadow: 0 8px 20px var(--gray); 
+}
+
+.project-card h2 {
+  color:var(--light);
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  color: var(--light);
+  line-height:1.6em;
+}
+
+/*Service cards*/
+.service-card {
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 15px;
+  padding:25px;
+  width:220px;
+  box-shadow: 0 8px 20px var(--black);
+}
+
+.service-card h2 {
+  color:var(--light);
+  margin-bottom: 15px; 
+}
+
+.service-card p {
+  color: var(--light);
+  line-height:1.6em;
+}
+
+/*card placement*/
+.projects-container {
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: flex-start;
+  gap: 25px;
+  flex-wrap: nowrap;
+}
+
+.services-container {
+  display:flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/*images for projects to fit in a box*/
+.project-image {
+  width:100%;
+  height:180px;
+  overflow:hidden;
+  border-radius: 10px;
+}
+
+.project-image img {
+  width:100%;
+  height:180px;
+  object-fit: cover;
+  border:1px solid var(--gray);
+}
+
+/* Education section */
+.education-section {
+  max-width:900px;
+  margin: 0 auto;
+}
+
+.education-intro {
+  max-width:700px;
+  margin-bottom: 40px; 
+}
+
+.education-card {
+  display:flex;
+  gap: 30px;
+  background-color:var(--black);
+  color:var(--light);
+  border: 1px solid var(--light);
+  border-radius: 15px;
+  padding:30px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px var(--off-white);
+}
+
+.education-year {
+  color: var(--light);
+  font-weight: bold;
+  min-width: 130px;
+}
+
+.education-info h2 {
+  margin-bottom: 8px;
+}
+
+.education-info h3 {
+  color: var(--light);
+  margin-bottom: 15px;
+}
+
+.education-into p {
+  line-height: 1.6;
+}
+
+/*services i offer*/
+.services-section {
+  max-width: 1100px;
+  margin:0 auto;
+}
+
+.services-intro {
+  max-width: 750px;
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  width:220px;
+  background-color: var(--black);
+  border:1px solid var(--off-white);
+  border-radius: 15px;
+  overflow:hidden;
+  box-shadow: 0 8px 20px var(--dark-gray);
+}
+
+.service-info {
+  padding: 20px;
+}
+
+.service-info h2 {
+  color: var(--light);
+  margin-bottom: 15px;
+}
+
+.service-info p {
+  color: var(--light);
+  line-height:1.6;
+}
+
+/*Service section images*/
+.service-image {
+  width: 100%; 
+  height: 160px;
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Form section - contacting me*/
+.contact-section {
+  max-width:1100px;
+  margin:0 auto;
+}
+
+.contact-section h1 {
+  margin-bottom: 35px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* Contact information panel */
+.contact-information {
+  flex: 1;
+  background-color: var(--black);
+  border: 1px solid var(--off-white);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 20px var(--dark-gray);
+}
+
+.contact-information h2 {
+  color: var(--light);
+  margin-bottom: 20px;
+}
+
+.contact-information > p {
+  line-height: 1.6;
+  margin-bottom: 30px; 
+  color: var(--light);
+}
+
+/*Individual contact details*/
+.contact-detail {
+  border-top: 1px solid var(--light);
+  padding: 18px 0; 
+}
+
+.contact-detail strong {
+  color: var(--light);
+}
+
+.contact-detail p {
+  margin: 8px 0 0;
+  color: var(--light);
+}
+
+/*Contact form*/
+.contact-container form {
+  flex: 1;
+  display: flex;
+  flex-direction:column;
+  gap: 10px; 
+}
+
+.contact-container label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.contact-container input,
+.contact-container textarea {
+  padding:12px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border: 1px solid var(--off-white);
+  border-radius: 8px;
+  background-color: var(--black);
+  color: var(--light);
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  outline: 2px solid var(--light);
+}
+
+.contact-container button {
+  margin-top: 10px;
+  padding: 12px 20px; 
+  background-color: var(--black);
+  color: var(--light);
+  border: none;
+  border-radius: 8px; 
+  cursor: pointer;
+  font-size:16px;
+  font-weight: bold;
+}
+
+.contact-container button:hover {
+  background-color: var(--dark-gray);
+}
